@@ -5,7 +5,7 @@
         
         $file = $_POST['file'];
         if(!$file['size'] > MAX_FILE_SIZE) {
-            $ext = end(explode('.', $file['name']));
+            $ext = strtolower(end(explode('.', $file['name'])));
             
             $generated_name = "";
             do{
