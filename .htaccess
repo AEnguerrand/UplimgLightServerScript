@@ -1,1 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
 
+    RewriteCond $1 !^(index\.php|upload\.php|robots\.txt|favicon\.ico)
+    RewriteRule ^(\w+)$ /view.php?image=$1
+</IfModule>
+<Directory uploads>
+    Order Allow,Deny
+    Deny from all
+</Directory>
