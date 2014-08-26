@@ -7,7 +7,7 @@
 		
         if($file['size'] <= MAX_FILE_SIZE && array_search($_POST['key'], explode(",", ALLOWED_KEYS)) !== false) {
             $ext = explode('.', $file['name']);
-			$ext = strtolower(end($ext));
+            $ext = strtolower(end($ext));
             
             $generated_name = substr(md5(uniqid(rand(), true)), 0, 4);
             do{
