@@ -1,4 +1,4 @@
-UplimgLightServerScript
+Uplimg Light Server Script
 =======================
 This is a light PHP script for reception of images/files from [Uplimg](https://github.com/Imote/Uplimg).
 
