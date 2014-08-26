@@ -12,7 +12,7 @@
             $generated_name = substr(md5(uniqid(rand(), true)), 0, 4);
             do{
                 $generated_name .= substr(md5(uniqid(rand(), true)), 0, rand(2, 5));
-            }while(file_exists(UPLOAD_DIR.$generated_name.'.'.$ext));
+            } while(file_exists(UPLOAD_DIR.$generated_name.'.'.$ext));
             
             move_uploaded_file($file['tmp_name'], UPLOAD_DIR.$generated_name.'.'.$ext);
             
