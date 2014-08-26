@@ -4,7 +4,7 @@
     if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['file']) && isset($_POST['key'])) {
         
         $file = $_POST['file'];
-        if(!$file['size'] > MAX_FILE_SIZE && array_search($_POST['key'], explode(",", ALLOWED_KEYS)) {
+        if(!$file['size'] > MAX_FILE_SIZE && array_search($_POST['key'], explode(",", ALLOWED_KEYS))) {
             $ext = strtolower(end(explode('.', $file['name'])));
             
             $generated_name = "";
