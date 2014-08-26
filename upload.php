@@ -18,9 +18,9 @@
             
             echo BASE_URL.$generated_name;
         } else {
-			echo "ERROR FILE TOO BIG OR WRONG KEY ";
-		}
+            echo "ERROR FILE TOO BIG OR WRONG KEY ";
+        }
     } else {
-		echo "ERROR NO FILE SENDED OR NO KEY";
-	}
+        echo "ERROR NO FILE SENDED OR NO KEY";
+    }
 ?>
