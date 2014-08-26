@@ -1,11 +1,11 @@
 <?php
     include('config.php');
     
-    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES["uplimgFile"]) && isset($_POST['key'])) {
+    if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES["uplimgFile"]) && isset($_POST['uplimgKey'])) {
         
         $file = $_FILES["uplimgFile"];
         
-        if($file['size'] <= MAX_FILE_SIZE && array_search($_POST['key'], explode(",", ALLOWED_KEYS)) !== false) {
+        if($file['size'] <= MAX_FILE_SIZE && array_search($_POST['uplimgKey'], explode(",", ALLOWED_KEYS)) !== false) {
             $ext = explode('.', $file['name']);
             $ext = strtolower(end($ext));
             
