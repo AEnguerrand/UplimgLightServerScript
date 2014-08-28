@@ -23,4 +23,3 @@
     } else {
         echo "ERROR NO FILE SENDED OR NO KEY";
     }
-?>
