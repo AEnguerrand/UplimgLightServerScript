@@ -27,4 +27,3 @@
         return $iValue;  
     }
     define ('MAX_FILE_SIZE', min(convertPHPSizeToBytes(ini_get('post_max_size')), convertPHPSizeToBytes(ini_get('upload_max_filesize'))));
-?>
