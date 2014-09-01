@@ -6,7 +6,7 @@
     <body>
         <ul>
             <?php
-            include('config.php');
+            require_once('config.php');
 
             if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['key'])) {
                 if (array_search($_GET['key'], explode(",", ALLOWED_KEYS)) !== false) {
